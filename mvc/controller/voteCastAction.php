@@ -9,10 +9,10 @@
 <fieldset>
 <h1>Casting Done!</h1>
 <?php
-echo"Thanks";
+echo"Thank you";
 ?>
 <br><br>
-<a href="http://localhost/mvc/controller/logoutAction.php">Logout</a>
+<a href="http://localhost/mvc/view/logout.php">Logout</a>
 </fieldset>
 </body>
 </html>
