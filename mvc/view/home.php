@@ -18,20 +18,32 @@
 </head>
 <body>
 
-	<h1>Welcome</h1>
-	<img src="profile.jpg" alt="Profile" style="width:150px;height:150px;">
-	<a href="http://localhost/mvc/view/profile.php"><hr><hr>Profile</a>
-	<br><br>
-
-	<img src="vote.jpg" alt="Vote" style="width:200px;height:200px;">
-	<a href="http://localhost/mvc/view/voteCast.php"><hr><hr>Vote Cast</a>
-	<br><br>
-
-	<img src="logout.jpg" alt="Logout" style="width:150px;height:150px;">
-	<a href="../controller/logoutAction.php"><hr><hr>Logout</a>
-	<br><br>
-
-
+	<h1 style="color: forestgreen;" align="middle">Welcome</h1>
+	
+	<h3>
+	<p align="middle">
+	<img src="profile.jpg" alt="Profile" style="width:50px;height:50px;">
+	<br>
+	<a style="color: orchid;" href="http://localhost/mvc/view/profile.php">Profile</a>
+	</p>
+	</h3>
+	
+	<h3>
+	<p align="middle">
+	<img src="vote.jpg" alt="Vote" style="width:70px;height:70px;">
+	<br>
+	<a style="color: royalblue;" href="http://localhost/mvc/view/voteCast.php">Vote Cast</a>
+	</p>
+	</h3>
+	
+	<h3>
+	<p align="middle">
+	<img src="logout.jpg" alt="Logout" style="width:50px;height:50px;">
+	<br>
+	<a style="color: red;" href="../controller/logoutAction.php">Logout</a>
+	</p>
+	</h3>
+	
 </body>
 </html>
 <?php

@@ -1,5 +1,5 @@
 <?php
-include "header.php";
+include "beforeLoginHeader.php";
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,8 @@ include "header.php";
 	<meta charset="utf-8">
 	<title>Change password</title>
 </head>
-<body !--style="background-color:LightBlue;"-->
+<body>
+<p align="middle"><img src="forgotPassword.jpg" alt="Forgot Password" style="width:300px;height:300px;"></p>
 <h1 style="color:slategray;">Change password</h1>
 <form action="PasswordChangeAction.php" method="POST" !--novalidate-->
 	<fieldset>

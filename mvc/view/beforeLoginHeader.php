@@ -5,8 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style>
-.ovms 
-{
+.avatar {
   vertical-align: middle;
   width: 50px;
   height: 50px;
@@ -20,10 +19,9 @@
 <hr>
 <p>
 <h3>
-<img src="ovms.jpg" alt="ovms logo" style="width:60px;height:60px;" class="ovms">
-<a href="../view/home.php">Home</a>
-<a href="../view/profile.php">Profile</a>
-<a href="../view/voteCast.php">Vote Cast</a>
+<img src="ovms.jpg" alt="ovms logo" style="width:70px;height:70px;" class="avatar">
+<a href="../view/registration.php">Registration</a>
+<a href="../view/login.php">Login</a>
 <a href="../view/help.php">Help</a>
 </h3>
 </p>

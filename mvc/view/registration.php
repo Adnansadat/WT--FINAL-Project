@@ -1,5 +1,5 @@
 <?php
-include "header.php";
+include "../view/beforeLoginHeader.php";
 ?>
 
 <!DOCTYPE html>
@@ -8,10 +8,8 @@ include "header.php";
 	<meta charset="utf-8">
 	<title>Registration Page</title>
 </head>
-<body !--style="background-color:LightBlue;"-->
-
-<img src="registration.jpg" alt="Registration" >
-
+<body>
+<p align="middle"><img src="reg.jpg" alt="Registration" style="width:300px;height:200px;"></p>
 <h1 style="color:slategray;">Registration page</h1>
 <form action="../controller/registrationAction.php" method="POST" >
 			<fieldset>
