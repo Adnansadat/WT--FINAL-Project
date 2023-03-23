@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 $fname = $lname = $file = $addressLine = $district = $division = $postcode = $country = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") 
@@ -9,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST")
   $lname = sanitize($_POST["lname"]);
   $addressLine = sanitize($_POST["addressLine"]);
   $postcode = sanitize($_POST["postcode"]);
-
+  $password = sanitize($_POST["password"]);
   $isValid = true;
     if (empty($password))
       {
@@ -57,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST")
   
   $file = fopen("../model/users.json", "a");
 
-  $content = array(array("fname" => $fname, "lname" => $lname, "addressLine" => $addressLine, "postcode" => $postcode));
+  $content = array(array("email" => $_SESSION['email'], "fname" => $fname, "lname" => $lname, "addressLine" => $addressLine, "postcode" => $postcode, "password" => $password));
 
   $content = json_encode($content);
     fwrite($file, $content);

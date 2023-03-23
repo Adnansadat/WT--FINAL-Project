@@ -1,14 +1,15 @@
 <?php
 
     session_start();
+    $_SESSION['email'] = $_POST["email"]; 
 
 $email = $password = "";
 
-if(!empty($_POST["remember"])) {
-  setcookie ("email",$_POST["email"],time()+ 3600);
-  setcookie ("password",$_POST["password"],time()+ 3600);
-  echo "Cookies Set Successfuly";
-} else {
+if(isset($_POST["remember"])) {
+  setcookie ("email",$_POST["email"],time()+ 3600, "/");
+  setcookie ("password",$_POST["password"],time()+ 3600, "/");
+} 
+else {
   setcookie("email","");
   setcookie("password","");
   echo "Cookies Not Set";
