@@ -7,21 +7,26 @@ include "beforeLoginHeader.php";
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
+	<style>
+		img {
+  				border-radius: 10%;
+			}
+		body{
+  				background: linear-gradient(to Bottom,#ffffff, #e6e6ff,  #d6d6ff);
+			}
+	
+</style>
 </head>
 <body>
-<hr>
-<p align="middle"><img src="reg.jpg" alt="Registration" style="width:500px;height:300px;">
 <br>
-<a href="../view/registration.php"><h3 align="middle">Registration</h3></a>
-</p>
-<p align="middle"><img src="Login.jpg" alt="Registration" style="width:400px;height:400px;">
+<a href="../view/registration.php"><h3 align="middle"><img src="reg.jpg" alt="Registration" style="width:500px;height:300px;border: 2px solid slategray;"><br>Registration</h3></a>
+
 <br>
-<a href="../view/login.php"><h3 align="middle">Login</h3></a>
-</p>
-<p align="middle"><img src="forgotPassword.jpg" alt="Registration" style="width:400px;height:400px;">
+<a href="../view/login.php"><h3 align="middle"><img src="Login.jpg" alt="Login" style="width:400px;height:400px;border: 2px solid slategray;"><br>Login</h3></a>
+
 <br>
-<a href="../view/passwordChange.php"><h3 align="middle">Forgot Password</a></h3>
-</p>
+<a href="../view/passwordChange.php"><h3 align="middle"><img src="forgotPassword.jpg" alt="forgotPassword" style="width:400px;height:400px; border: 2px solid sl;"><br>Forgot Password</h3></a>
+
 <hr><hr>
 </body>
 </html>

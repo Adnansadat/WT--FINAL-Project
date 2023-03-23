@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" href="../view/css/beforeloginheader.css">
 </head>
 <body>
 <p align="middle"><img src="f.jpg" alt="f" style="width:350px;height:100px;">

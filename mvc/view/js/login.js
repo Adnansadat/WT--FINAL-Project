@@ -1,11 +1,30 @@
-function isValid(pForm) {
-	console.log(pForm.action);
-	console.log(pForm.email.value);
-	console.log(pForm.password.value);
+ function isValid(pForm) {
 
-	if (pForm.email.value === "" && pForm.password.value === "") {
-		console.log("Please fill up the form properly");
-		return false;
+	const emailMsg = document.getElementById("email_error_msg");
+	const passwordMsg = document.getElementById("password_error_msg");
+
+	emailMsg.innerHTML = "";
+	passwordMsg.innerHTML = "";
+
+	let flag = true;
+	const pattern =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+	if (pForm.email.value === "") {
+		emailMsg.innerHTML = "Email cannot be empty (JS)";
+		flag = false;
 	}
+	else {
+		if (!pattern.test(pForm.email.value)) {
+			emailMsg.innerHTML = "Email is not in correct format (JS)";
+			flag = false;
+		}
+	}
+	if (pForm.password.value === "") {
+		passwordMsg.innerHTML = "Password cannot be empty (JS)";
+		flag = false;
+	}	
+
+	if (!flag) return false;
+	return true;
 
 }

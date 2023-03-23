@@ -16,7 +16,7 @@
 </head>
 <body>
 <h1 style="color:blueviolet;" align="middle">Online Voting System</h1>
-<fieldset>
+<fieldset style="border: 3px solid #F37622;">
 <hr>
 <p>
 <h3>

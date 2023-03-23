@@ -10,7 +10,7 @@
 </head>
 <body>
 	<hr><hr>
-<h1><p align="middle"> Welcome "Adnan Sadat"</p></h1>
+<h3 style="color:limegreen;"><p align="left">Valid voter</p></h3>
 <h4>
 <p align="left">
 <img src="Adnan.jpg" alt="Profile Picture" style="width:200px;height:200px;">
@@ -26,6 +26,10 @@ Address: Bashundhara R/A, Block-B, Road-8, House-61 <br>
 </h4>
 <hr><hr>
 <h3 align="middle"><a href="../view/updateProfile.php">Update Profile</a></h3>
+<hr><hr>
+<h3 align="middle"><a href="../view/voteCast.php">Vote Cast</a></h3>
+<hr><hr>
+<h3 align="middle"><a href="../view/logout.php">Logout</a></h3>
 <hr><hr>
 </body>
 </html>

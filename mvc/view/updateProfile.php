@@ -6,15 +6,18 @@ include "header.php";
 <head>
 	<meta charset="utf-8">
 	<title>Update Profile</title>
+	<script src="js/updateProfile.js"></script>
 </head>
 <body !--style="background-color:LightBlue;"-->
 <h1 style="color:slategray;">Update Profile</h1>
-<form action="../controller/updateProfileAction.php" method="POST" novalidate>
+<form action="../controller/updateProfileAction.php" method="POST" novalidate onsubmit="return isValid(this);">
 			<label>First Name:</label>
 			<input type="text" name="fname" required placeholder="Firstname">
+			<span id="fname_error_msg" style="color:red"></span>
 			<br> <br>
 			<label>Last Name:</label> 
 			<input type="text" name="lname" required placeholder="Lastname">
+			<span id="lname_error_msg" style="color:red"></span>
 			<br> <br>
 			<input type="file">
 			<br> <br>
@@ -45,6 +48,7 @@ include "header.php";
 			<br> <br>
 			<label>Postcode</label> 
 			<input type="text" name="postcode" required placeholder="1903">
+			<span id="postcode" style="color:red"></span>
 			<br> <br>
 			<label>Country</label>
 			<select name="country">
@@ -54,9 +58,15 @@ include "header.php";
 				<option value="Germany">Germany</option>
 			</select>
 			<br> <br>
+			<label><strong>Email:</strong></label>
+			<input type="email" name="email" required placeholder="someone@gmail.com">
+			<?php echo isset($_SESSION['email_error_msg']) ? $_SESSION['email_error_msg'] : ""?>
+			<span id="email_error_msg" style="color:red"></span>
+			<br> <br>
 			<label><strong> Password: </strong></label>
 			<input type="password" name="password" required placeholder="#Passw0rd">
 			<?php echo isset($_SESSION['password_error_msg']) ? $_SESSION['password_error_msg'] : ""?>
+			<span id="password_error_msg" style="color:red"></span>
 			<br> <br>
 			<input type="submit" style="color:red;" name="update" value="Update">
 </form>
